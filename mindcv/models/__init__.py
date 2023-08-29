@@ -54,6 +54,8 @@ from . import (
     volo,
     xception,
     xcit,
+    lenet,
+    alexnet,
 )
 from .bit import *
 from .cait import *
@@ -110,6 +112,8 @@ from .vit import *
 from .volo import *
 from .xception import *
 from .xcit import *
+from .lenet import *
+from .alexnet import *
 
 # some net module is replaced by the net function with the same name when we do from .net import *
 # we cannot use net.__all__, so we manually copy net.__all__ here.
@@ -168,3 +172,5 @@ __all__.extend(vit.__all__)
 __all__.extend(volo.__all__)
 __all__.extend(["Xception", "xception"])
 __all__.extend(xcit.__all__)
+__all__.extend(lenet.__all__)
+__all__.extend(alexnet.__all__)
